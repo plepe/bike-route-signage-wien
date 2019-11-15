@@ -1,0 +1,79 @@
+length: 469
+endRoute: true
+route:
+  - name: Wientalradweg
+    at: 0
+    type: bikeroute
+    ptRoutes: []
+    priority: "1"
+    direction: both
+  - name: Mariahilfer Straße
+    at: 28
+    type: bikeroute
+    ptRoutes: []
+    priority: "1"
+    direction: both
+    connections:
+      - name: Neubaugasse
+        type: ptStop
+        ptRoutes:
+          - U3
+        priority: "1"
+  - name: Lindengasse
+    at: 211
+    type: bikeroute
+    ptRoutes: []
+    priority: "2"
+    direction: both
+    connections:
+      - name: Gürtelradweg
+        type: bikeroute
+        distance: 800
+        ptRoutes: []
+        priority: "4"
+        direction: left
+      - name: Westbahnhof
+        type: ptStop
+        distance: 950
+        ptRoutes:
+          - U3
+          - U6
+          - train
+          - tram
+        priority: "3"
+        direction: left
+  - name: Westbahnstraße
+    at: 427
+    type: bikeroute
+    ptRoutes: []
+    priority: "3"
+    direction: left
+    connections:
+      - name: Burggasse-Stadthalle
+        type: ptStop
+        distance: 900
+        ptRoutes:
+          - U6
+          - tram
+        priority: "4"
+  - name: Siebensterngasse
+    at: 468
+    type: bikeroute
+    ptRoutes:
+      - tram
+    priority: "3"
+    direction: right
+    connections:
+      - name: Volkstheater
+        type: ptStop
+        distance: 900
+        ptRoutes:
+          - U2
+          - U3
+        priority: "4"
+coordinates:
+  - [ 16.350296, 48.198084 ]
+  - [ 16.349813, 48.198735 ]
+  - [ 16.349427, 48.199486 ]
+  - [ 16.349105, 48.200644 ]
+  - [ 16.34904, 48.202167 ]
