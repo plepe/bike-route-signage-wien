@@ -1,0 +1,26 @@
+route:
+  - name: Loeschenkohlgasse
+    at: 1009
+    type: bikeroute
+    ptRoutes: []
+    priority: "3"
+    direction: left
+  - name: Schweglerstraße
+    at: 1289
+    type: ptStop
+    ptRoutes:
+      - U3
+    priority: "2"
+  - name: Goldschlagstraße
+    at: 1405
+    type: bikeroute
+    ptRoutes: []
+    priority: "2"
+    direction: both
+coordinates:
+  - [ 16.326628, 48.209031 ]
+  - [ 16.325383, 48.205256 ]
+  - [ 16.32534, 48.204598 ]
+  - [ 16.325641, 48.204241 ]
+  - [ 16.32504, 48.20005 ]
+  - [ 16.327078, 48.196575 ]
