@@ -1,0 +1,297 @@
+length: 5312
+title: Ring-Rund
+continue:
+  file: ring-rund-1-ccw
+  at: 0
+endRoute: false
+route:
+  - name: Operngasse
+    at: 18
+    type: bikeroute
+    ptRoutes: []
+    priority: "2"
+    direction: both
+    connections:
+      - name: Wientalradweg
+        type: bikeroute
+        ptRoutes: []
+        priority: "3"
+        direction: right
+      - name: Margaretenstraße
+        type: bikeroute
+        ptRoutes: []
+        priority: "4"
+        direction: right
+      - name: Michaelerplatz
+        type: place
+        distance: 600
+        ptRoutes: []
+        priority: "4"
+        direction: left
+  - name: Oper
+    at: 147
+    type: place
+    ptRoutes:
+      - U1
+      - WLB
+      - tram
+    priority: "1"
+    connections:
+      - name: Karlsplatz
+        type: ptStop
+        distance: 200
+        ptRoutes:
+          - U1
+          - U4
+          - U5
+        priority: "3"
+        direction: right
+  - name: Schwarzenbergplatz
+    at: 507
+    type: place
+    ptRoutes: []
+    priority: "2"
+    connections:
+      - name: Rennweg
+        type: bikeroute
+        ptRoutes: []
+        priority: "3"
+        direction: right
+  - name: Stubentor
+    at: 1268
+    type: ptStop
+    ptRoutes:
+      - U3
+      - tram
+      - bus
+    priority: "2"
+    connections:
+      - name: Landstraßer Hauptstraße
+        type: bikeroute
+        ptRoutes: []
+        direction: right
+        connections:
+          - name: Wien Mitte
+            type: ptStop
+            distance: 350
+            ptRoutes:
+              - U3
+              - U4
+              - S
+              - CAT
+            priority: "4"
+      - name: Stephansplatz
+        type: place
+        distance: 650
+        ptRoutes:
+          - U1
+          - U3
+        priority: "4"
+        direction: left
+  - name: Urania
+    type: place
+    at: 1793
+    connections:
+      - name: Praterstraße
+        type: bikeroute
+        ptRoutes: []
+        priority: "1"
+        direction: right
+        connections:
+          - name: Praterstern
+            type: ptStop
+            distance: 1000
+            ptRoutes:
+              - U1
+              - U2
+              - S
+            priority: "2"
+      - name: Donaukanal
+        type: bikeroute
+        ptRoutes: []
+        direction: straight
+    ptRoutes: []
+    routeDirection: left
+  - name: Taborstraße
+    at: 2098
+    type: bikeroute
+    ptRoutes: []
+    priority: "3"
+    direction: right
+  - name: Schwedenplatz
+    at: 2248
+    type: place
+    ptRoutes:
+      - U1
+      - U4
+    priority: "1"
+    connections:
+      - name: Rotenturmstraße
+        type: bikeroute
+        ptRoutes: []
+        priority: "3"
+        direction: left
+  - name: Salztorbrücke
+    at: 2546
+    type: place
+    ptRoutes: []
+    priority: "2"
+    direction: both
+    connections:
+      - name: Hoher Markt
+        type: place
+        ptRoutes: []
+        priority: "3"
+        direction: left
+      - name: Karmelitermarkt
+        type: place
+        distance: 425
+        ptRoutes: []
+        priority: "3"
+        direction: right
+  - name: Schottenring
+    at: 3037
+    type: place
+    ptRoutes:
+      - U2
+      - U4
+    priority: "2"
+    connections:
+      - name: Brigittenau
+        type: place
+        ptRoutes: []
+        direction: right
+  - name: Börse
+    at: 3455
+    type: place
+    ptRoutes: []
+    priority: "2"
+    connections:
+      - name: Wipplingerstraße
+        type: bikeroute
+        ptRoutes: []
+        priority: "3"
+        direction: left
+  - name: Schottentor
+    at: 3723
+    type: ptStop
+    ptRoutes:
+      - U2
+      - tram
+    priority: "1"
+    connections:
+      - name: Schottengasse
+        type: bikeroute
+        ptRoutes: []
+        priority: "3"
+        direction: left
+      - name: Währingerstraße
+        type: bikeroute
+        ptRoutes: []
+        priority: "2"
+        direction: right
+  - name: Rathausplatz
+    at: 4148
+    type: place
+    ptRoutes: []
+    priority: "2"
+  - name: Stadiongasse, Josefstädter Straße
+    at: 4346
+    type: bikeroute
+    ptRoutes: []
+    priority: "3"
+    direction: right
+  - name: Bellaria
+    at: 4620
+    type: place
+    ptRoutes: []
+    priority: "1"
+    connections:
+      - name: Volkstheater, Ring
+        type: ptStop
+        ptRoutes:
+          - U3
+          - tram
+        priority: "2"
+      - name: Volkstheater, Museumsquartier
+        type: ptStop
+        distance: 250
+        ptRoutes:
+          - U2
+          - U3
+        priority: "3"
+        direction: right
+  - name: Heldenplatz
+    at: 4784
+    type: place
+    ptRoutes: []
+    direction: left
+    connections:
+      - name: Michaelerplatz
+        type: place
+        distance: 410
+        ptRoutes: []
+        priority: "3"
+  - name: Babenbergerstraße, Mariahilfer Straße
+    at: 4982
+    type: bikeroute
+    ptRoutes: []
+    priority: "2"
+    direction: right
+coordinates:
+  - [ 16.367955, 48.202885 ]
+  - [ 16.368427, 48.202803 ]
+  - [ 16.368567, 48.202703 ]
+  - [ 16.369087, 48.202599 ]
+  - [ 16.369586, 48.202503 ]
+  - [ 16.370476, 48.202313 ]
+  - [ 16.370552, 48.202242 ]
+  - [ 16.373577, 48.20157 ]
+  - [ 16.374945, 48.201938 ]
+  - [ 16.375133, 48.202145 ]
+  - [ 16.377482, 48.204441 ]
+  - [ 16.377541, 48.204598 ]
+  - [ 16.377938, 48.204984 ]
+  - [ 16.378083, 48.205045 ]
+  - [ 16.379457, 48.206346 ]
+  - [ 16.379419, 48.206414 ]
+  - [ 16.380138, 48.207147 ]
+  - [ 16.380578, 48.207472 ]
+  - [ 16.382085, 48.208985 ]
+  - [ 16.382402, 48.210132 ]
+  - [ 16.382734, 48.21153 ]
+  - [ 16.380723, 48.211541 ]
+  - [ 16.379049, 48.211677 ]
+  - [ 16.37759, 48.211998 ]
+  - [ 16.376587, 48.212374 ]
+  - [ 16.375471, 48.212967 ]
+  - [ 16.374419, 48.213986 ]
+  - [ 16.374114, 48.2139 ]
+  - [ 16.373663, 48.214486 ]
+  - [ 16.372236, 48.215884 ]
+  - [ 16.371785, 48.215859 ]
+  - [ 16.371329, 48.216281 ]
+  - [ 16.371308, 48.216409 ]
+  - [ 16.370364, 48.217314 ]
+  - [ 16.370149, 48.217349 ]
+  - [ 16.367939, 48.21632 ]
+  - [ 16.362939, 48.214029 ]
+  - [ 16.362859, 48.213893 ]
+  - [ 16.361657, 48.213321 ]
+  - [ 16.361078, 48.211323 ]
+  - [ 16.360826, 48.210472 ]
+  - [ 16.360713, 48.20976 ]
+  - [ 16.360027, 48.20749 ]
+  - [ 16.359919, 48.207115 ]
+  - [ 16.359935, 48.207051 ]
+  - [ 16.360059, 48.207043 ]
+  - [ 16.36074, 48.206529 ]
+  - [ 16.360703, 48.206436 ]
+  - [ 16.363406, 48.204426 ]
+  - [ 16.363991, 48.204008 ]
+  - [ 16.364077, 48.204019 ]
+  - [ 16.364425, 48.203722 ]
+  - [ 16.365788, 48.20339 ]
+  - [ 16.365949, 48.203268 ]
+  - [ 16.367751, 48.202882 ]
+  - [ 16.367934, 48.202896 ]
