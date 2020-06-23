@@ -1,4 +1,5 @@
-title: Meidling - Liesing
+title: Zentrum - Bhf. Meidling
+length: 4790
 route:
   - name: Ring-Rund
     at: 3
@@ -205,26 +206,94 @@ route:
       - REX
       - WLB
     priority: "1"
+  - name: Philadelphiabrücke
+    at: 4784
+    type: place
+    ptRoutes: []
+    priority: "2"
+    direction: left
+    connections:
+      - name: Wienerberg
+        type: bikeroute
+        ptRoutes: []
+        priority: "3"
+        connections:
+          - name: Schedifkaplatz
+            type: ptStop
+            distance: 50
+            ptRoutes:
+              - WLB
+          - name: Triester Straße
+            type: place
+            ptRoutes: []
+          - name: Altes Landgut
+            type: ptStop
+            distance: 2500
+            ptRoutes:
+              - U1
+      - name: Liesing
+        type: bikeroute
+        ptRoutes: []
+        priority: "2"
+        connections:
+          - name: Altmannsdorf
+            type: place
+            distance: 1400
+            ptRoutes: []
+          - name: Alt Erlaa
+            type: ptStop
+            distance: 3400
+            ptRoutes:
+              - U6
+          - name: Atzgersdorf
+            type: ptStop
+            distance: 4400
+            ptRoutes:
+              - S
+          - name: Liesing
+            type: place
+            distance: 6000
+            ptRoutes:
+              - REX
+              - S
   - name: Tanbruckgasse
     at: 4747
     type: bikeroute
     priority: "2"
     direction: right
-    realDirection: diagright
-    routeDirection: left
     connections:
-      - name: Meidling Hauptraße
-        type: ptStop
-        distance: 1120
-        ptRoutes:
-          - U4
-        priority: "2"
       - name: Niederhofstraße
         type: ptStop
         distance: 820
         ptRoutes:
           - U6
         priority: "2"
+      - name: Meidling Hauptraße
+        type: ptStop
+        distance: 1120
+        ptRoutes:
+          - U4
+        priority: "2"
+    ptRoutes: []
+    realDirection: right
+  - name: Lainz
+    at: 4735
+    type: bikeroute
+    ptRoutes: []
+    realDirection: diagright
+    connections:
+      - name: Schloss Hetzendorf
+        type: place
+        distance: 1840
+        ptRoutes: []
+      - name: Speising
+        type: place
+        distance: 3740
+        ptRoutes: []
+      - name: Lainzer Tiergarten
+        type: place
+        distance: 6100
+        ptRoutes: []
 coordinates:
   - [ 16.368014, 48.202506 ]
   - [ 16.367328, 48.201159 ]
